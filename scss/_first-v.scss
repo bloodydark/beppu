@@ -6,13 +6,12 @@
     position: relative;
 }
 
-
-.red {
+.fv-pic {
     position: absolute;
     top: 0;
     right: 0;
-    width: 775px;
-    height: 585px;
+    width: 60.5%;
+    height: 73.2%;
     background-color: $crim;
     img {
         position: absolute;
@@ -20,24 +19,20 @@
     }
 }
 
-.fv-logo {
-    writing-mode: vertical-lr;
-    position: relative;
-    span {
-        font-size: 1.6rem;
-        position: absolute;
-        transform: translate(10%, -30%);
-    }
-}
-
-.fv-wrap {
+.fv-info {
     padding-left: 200px;
-}
-
-.fv-title {
-    padding: 160px 0;
-    font-size: 4rem;
-    letter-spacing: 15px;
+    .fv-title {
+        writing-mode: vertical-lr;
+        position: relative;
+        padding: 160px 0;
+        font-size: 4rem;
+        letter-spacing: 15px;
+        span {
+            font-size: 1.6rem;
+            position: absolute;
+            transform: translate(10%, -30%);
+        }
+    }
 }
 
 nav ul {
@@ -52,19 +47,16 @@ nav ul {
         cursor: pointer;
         transition: .3s;
     }
-
 }
-
-
 
 .btn {
     border: none;
-    position: fixed;
-    left: 0%;
-    bottom: 0%;
+    position: fixed; //ボタンを左下に固定
+    left: 0;
+    bottom: 0;
     background-color: $crim;
     width: 8rem;
-    height: 250px;
+    height: 25rem;
     color: white;
     z-index: 100;
     &:hover {
@@ -77,6 +69,5 @@ nav ul {
         writing-mode: vertical-lr;
         margin: 0 auto;
         letter-spacing: 10px;
-        
     }
 }

@@ -4,17 +4,15 @@
 
 .map-wrap {
     position: relative;
+    height: 519px;
 }
 
 .map-info {
     background-color: $crim;
     position: absolute;
     transform: translate(0%, 60%);
-    // bottom: 0%;
-    // left: 0%;
-    width: 982px;
-    height: 311px;
-    // z-index: 1;
+    width: 76%;
+    height: 60%;
     p {
         text-align: center;
         font-size: 1.8rem;
@@ -25,12 +23,10 @@
 
 .map-pic {
     position: absolute;
-    width: 880px;
-    height: 314px;
-    right: 0%;
-    top: 175%;
+    width: 68%;
+    height: 60%;
+    right: 0;
+    bottom: 5%;
     box-shadow: 3px 3px 40px black;
-    // transform: translate(-50%, -50%);
-    // z-index: 5;
 }
 

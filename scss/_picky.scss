@@ -8,11 +8,11 @@
     }
 }
 
-.box1 {
+.desc {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 462px;
+    height: 59.5%;
     background-color: $crim;
     p {
         padding-top: 250px;
@@ -25,6 +25,9 @@
 
     }
 }
+
+
+/////swipeライブラリ/////
 
 .swiper-container {
     width: 80%; 

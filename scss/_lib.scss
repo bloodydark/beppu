@@ -40,10 +40,8 @@ body {
 
 .title {
     text-align: center;
-    // padding-top: 100px;
     font-size: 3.6rem;
     font-weight: bold;
-
     &:after {
         display: block;
         content: "";
@@ -57,6 +55,4 @@ body {
     width: 100% - (6% * 2); //7.5%は両側の余白
     margin: 0 auto;
     height: 776px;
-    // padding-top: 100px;
-
 }
