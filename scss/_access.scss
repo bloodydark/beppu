@@ -1,0 +1,36 @@
+#access {
+    height: 689px;
+}
+
+.map-wrap {
+    position: relative;
+}
+
+.map-info {
+    background-color: $crim;
+    position: absolute;
+    transform: translate(0%, 60%);
+    // bottom: 0%;
+    // left: 0%;
+    width: 982px;
+    height: 311px;
+    // z-index: 1;
+    p {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 50px;
+        padding: 150px 630px 97px 54px;
+    }
+}
+
+.map-pic {
+    position: absolute;
+    width: 880px;
+    height: 314px;
+    right: 0%;
+    top: 175%;
+    box-shadow: 3px 3px 40px black;
+    // transform: translate(-50%, -50%);
+    // z-index: 5;
+}
+

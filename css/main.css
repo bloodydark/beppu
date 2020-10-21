@@ -1,0 +1,328 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 12px;
+  line-height: 1.67;
+  background-color: black;
+  color: white;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+.title:after {
+  display: block;
+  content: "";
+  width: 7rem;
+  border-bottom: 1px solid #fff;
+  margin: 2rem auto 0;
+}
+
+.inner {
+  width: 88%;
+  margin: 0 auto;
+  height: 776px;
+}
+
+#first-v {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.red {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 775px;
+  height: 585px;
+  background-color: #800000;
+}
+.red img {
+  position: absolute;
+  transform: translate(-24%, -10%);
+}
+
+.fv-logo {
+  writing-mode: vertical-lr;
+  position: relative;
+}
+.fv-logo span {
+  font-size: 1.6rem;
+  position: absolute;
+  transform: translate(10%, -30%);
+}
+
+.fv-wrap {
+  padding-left: 200px;
+}
+
+.fv-title {
+  padding: 160px 0;
+  font-size: 4rem;
+  letter-spacing: 15px;
+}
+
+nav ul {
+  position: relative;
+  z-index: 100;
+  font-size: 1.8rem;
+}
+nav ul li:not(:nth-child(1)) {
+  margin-top: 40px;
+}
+nav ul li:hover {
+  color: aqua;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn {
+  border: none;
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+  background-color: #800000;
+  width: 8rem;
+  height: 250px;
+  color: white;
+  z-index: 100;
+}
+.btn:hover {
+  cursor: pointer;
+  color: aqua;
+}
+.btn p {
+  padding: 35px 23px;
+  border: 1px solid white;
+  writing-mode: vertical-lr;
+  margin: 0 auto;
+  letter-spacing: 10px;
+}
+
+#picky {
+  height: 945px;
+}
+#picky .inner {
+  position: relative;
+}
+#picky .inner .title {
+  margin-bottom: 70px;
+}
+
+.box1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 462px;
+  background-color: #800000;
+}
+.box1 p {
+  padding-top: 250px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 50px;
+}
+.box1 p span {
+  font-size: 2.5rem;
+}
+
+.box2 {
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  box-shadow: 3px 3px 40px black;
+}
+.box2 p {
+  text-align: center;
+  color: black;
+}
+
+#menu {
+  height: 1159px;
+}
+
+.img-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menu-info {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 60px 0;
+}
+
+img {
+  margin: 5px;
+}
+
+#access {
+  height: 689px;
+}
+
+.map-wrap {
+  position: relative;
+}
+
+.map-info {
+  background-color: #800000;
+  position: absolute;
+  transform: translate(0%, 60%);
+  width: 982px;
+  height: 311px;
+}
+.map-info p {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 50px;
+  padding: 150px 630px 97px 54px;
+}
+
+.map-pic {
+  position: absolute;
+  width: 880px;
+  height: 314px;
+  right: 0%;
+  top: 175%;
+  box-shadow: 3px 3px 40px black;
+}
+
+footer {
+  height: 269px;
+}
+footer small {
+  display: block;
+  text-align: center;
+}
+footer small::before {
+  display: block;
+  content: "";
+  width: 1093px;
+  border-bottom: 1px solid #fff;
+  margin: 2rem auto 70px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,41 @@
+#picky {
+    height: 945px;
+    .inner {
+        position: relative;
+        .title {
+            margin-bottom:70px;
+        }
+    }
+}
+
+.box1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 462px;
+    background-color: $crim;
+    p {
+        padding-top: 250px;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 50px;
+        span {
+            font-size: 2.5rem;
+        }
+
+    }
+}
+
+.box2 {
+    width: 80%; 
+    height: 50%;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    box-shadow: 3px 3px 40px black;
+    p {
+        text-align: center;
+        color: black;
+        // line-height: 300px;
+    }
+}

@@ -1,0 +1,20 @@
+#menu {
+    height: 1159px;
+    
+}
+
+.img-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu-info {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 60px 0;
+}
+
+img {
+    margin: 5px;
+}
