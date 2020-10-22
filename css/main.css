@@ -127,6 +127,11 @@ body {
   font-size: 3.6rem;
   font-weight: bold;
 }
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 3rem;
+  }
+}
 .title:after {
   display: block;
   content: "";
@@ -163,7 +168,9 @@ body {
 }
 @media screen and (max-width: 600px) {
   .fv-pic img {
-    display: none;
+    width: 500px;
+    height: 500px;
+    transform: translate(-40%, -5%);
   }
 }
 
@@ -176,6 +183,11 @@ body {
   padding: 160px 0;
   font-size: 4rem;
   letter-spacing: 15px;
+}
+@media screen and (max-width: 600px) {
+  .fv-info .fv-title {
+    padding-top: 80px;
+  }
 }
 .fv-info .fv-title span {
   font-size: 1.6rem;
@@ -209,6 +221,12 @@ nav ul li:hover {
   color: white;
   z-index: 100;
 }
+@media screen and (max-width: 600px) {
+  .btn {
+    height: 150px;
+    width: 50px;
+  }
+}
 .btn:hover {
   cursor: pointer;
   color: aqua;
@@ -219,6 +237,12 @@ nav ul li:hover {
   writing-mode: vertical-lr;
   margin: 0 auto;
   letter-spacing: 10px;
+}
+@media screen and (max-width: 600px) {
+  .btn p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
 }
 
 #picky {
@@ -244,8 +268,18 @@ nav ul li:hover {
   font-size: 2rem;
   line-height: 50px;
 }
+@media screen and (max-width: 600px) {
+  .desc p {
+    font-size: 1rem;
+  }
+}
 .desc p span {
   font-size: 2.5rem;
+}
+@media screen and (max-width: 600px) {
+  .desc p span {
+    font-size: 1.5rem;
+  }
 }
 
 .swiper-container {
@@ -281,11 +315,42 @@ nav ul li:hover {
 #menu {
   height: 1159px;
 }
+@media screen and (max-width: 600px) {
+  #menu {
+    height: 1600px;
+  }
+}
 
-.img-wrap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.img-wrap-a {
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+}
+.img-wrap-a img {
+  height: 100%;
+  margin: 7px;
+}
+@media screen and (max-width: 600px) {
+  .img-wrap-a img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.img-wrap-b {
+  display: inline-block;
+  height: 320px;
+  width: 100%;
+}
+.img-wrap-b img {
+  height: 100%;
+  margin: 7px;
+}
+@media screen and (max-width: 600px) {
+  .img-wrap-b img {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 .menu-info {
@@ -293,18 +358,32 @@ nav ul li:hover {
   font-size: 1.8rem;
   margin: 60px 0;
 }
-
-img {
-  margin: 5px;
+@media screen and (max-width: 600px) {
+  .menu-info {
+    font-size: 1.5rem;
+  }
 }
 
 #access {
   height: 689px;
 }
+@media screen and (max-width: 600px) {
+  #access {
+    height: 800px;
+  }
+}
 
 .map-wrap {
   position: relative;
   height: 519px;
+}
+@media screen and (max-width: 600px) {
+  .map-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    margin: 0 50px;
+  }
 }
 
 .map-info {
@@ -315,11 +394,21 @@ img {
   width: 76%;
   height: 60%;
 }
+@media screen and (max-width: 600px) {
+  .map-info {
+    width: 100%;
+  }
+}
 .map-info p {
   text-align: center;
   font-size: 1.8rem;
   line-height: 40px;
   padding: 150px 600px 97px 50px;
+}
+@media screen and (max-width: 600px) {
+  .map-info p {
+    padding: 250px 0 10px 0;
+  }
 }
 
 .map-pic {
@@ -329,6 +418,14 @@ img {
   right: 0;
   bottom: 13%;
   box-shadow: 3px 3px 40px black;
+}
+@media screen and (max-width: 600px) {
+  .map-pic {
+    box-shadow: none;
+    bottom: 30%;
+    height: 320px;
+    width: 100%;
+  }
 }
 
 footer {

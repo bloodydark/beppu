@@ -17,7 +17,9 @@
         position: absolute;
         transform: translate(-24%, -10%);
         @include sp {
-            display: none;
+            width: 500px;
+            height: 500px;
+            transform: translate(-40%,-5%);
         }
     }
 }
@@ -30,6 +32,9 @@
         padding: 160px 0;
         font-size: 4rem;
         letter-spacing: 15px;
+        @include sp {
+            padding-top: 80px;
+        }
         span {
             font-size: 1.6rem;
             position: absolute;
@@ -64,6 +69,10 @@ nav ul {
     height: 25rem;
     color: white;
     z-index: 100;
+    @include sp {
+        height: 150px;
+        width: 50px;
+    }
     &:hover {
         cursor: pointer;
         color: aqua;
@@ -74,5 +83,9 @@ nav ul {
         writing-mode: vertical-lr;
         margin: 0 auto;
         letter-spacing: 10px;
+        @include sp {
+            font-size: 1rem;
+            padding: 0 10px;
+        }
     }
 }

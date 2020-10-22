@@ -3,6 +3,7 @@
 ////////////////////
 $crim : #800000;
 
+
 //////////////////////
 //      mixin      ////
 ////////////////////
@@ -42,6 +43,9 @@ body {
     text-align: center;
     font-size: 3.6rem;
     font-weight: bold;
+    @include sp {
+        font-size: 3rem;
+    }
     &:after {
         display: block;
         content: "";
@@ -52,7 +56,7 @@ body {
 }
 
 .inner {
-    width: 100% - (6% * 2); //7.5%は両側の余白
+    width: 100% - (6% * 2); //6%は両側の余白
     margin: 0 auto;
     height: 776px;
 }
