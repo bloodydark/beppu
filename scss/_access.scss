@@ -10,14 +10,15 @@
 .map-info {
     background-color: $crim;
     position: absolute;
-    transform: translate(0%, 60%);
+    bottom: 0;
+    left: 0;
     width: 76%;
     height: 60%;
     p {
         text-align: center;
         font-size: 1.8rem;
-        line-height: 50px;
-        padding: 150px 630px 97px 54px;
+        line-height: 40px;
+        padding: 150px 600px 97px 50px;
     }
 }
 
@@ -26,7 +27,7 @@
     width: 68%;
     height: 60%;
     right: 0;
-    bottom: 5%;
+    bottom: 13%;
     box-shadow: 3px 3px 40px black;
 }
 

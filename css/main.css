@@ -161,6 +161,11 @@ body {
   position: absolute;
   transform: translate(-24%, -10%);
 }
+@media screen and (max-width: 600px) {
+  .fv-pic img {
+    display: none;
+  }
+}
 
 .fv-info {
   padding-left: 200px;
@@ -182,6 +187,7 @@ nav ul {
   position: relative;
   z-index: 100;
   font-size: 1.8rem;
+  width: 75px;
 }
 nav ul li:not(:nth-child(1)) {
   margin-top: 40px;
@@ -304,15 +310,16 @@ img {
 .map-info {
   background-color: #800000;
   position: absolute;
-  transform: translate(0%, 60%);
+  bottom: 0;
+  left: 0;
   width: 76%;
   height: 60%;
 }
 .map-info p {
   text-align: center;
   font-size: 1.8rem;
-  line-height: 50px;
-  padding: 150px 630px 97px 54px;
+  line-height: 40px;
+  padding: 150px 600px 97px 50px;
 }
 
 .map-pic {
@@ -320,7 +327,7 @@ img {
   width: 68%;
   height: 60%;
   right: 0;
-  bottom: 5%;
+  bottom: 13%;
   box-shadow: 3px 3px 40px black;
 }
 

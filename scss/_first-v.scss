@@ -16,6 +16,9 @@
     img {
         position: absolute;
         transform: translate(-24%, -10%);
+        @include sp {
+            display: none;
+        }
     }
 }
 
@@ -39,6 +42,7 @@ nav ul {
     position: relative;
     z-index: 100;
     font-size: 1.8rem;
+    width: 75px;
     & li:not(:nth-child(1)) {
         margin-top: 40px;
     }
@@ -47,6 +51,7 @@ nav ul {
         cursor: pointer;
         transition: .3s;
     }
+    
 }
 
 .btn {
